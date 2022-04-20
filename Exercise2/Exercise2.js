@@ -1,30 +1,31 @@
-var currentImage = 1;
+var images = ["IMG_0441.png", "IMG_0442.png", "IMG_0443.png", "IMG_0444.png", "IMG_0445.png"];
+var currentImage = 0;
+var imageTag = document.getElementById("image");
+imageTag.src = images[0];
 
 function previous()
 {
-	document.getElementById(currentImage).style.display = 'none';
-	if (currentImage == 1)
+	if (currentImage == 0)
 	{
-		currentImage = 5;
+		currentImage = 4;
 	}
 	else
 	{
 		currentImage = currentImage - 1;
 	}
-	document.getElementById(currentImage).style.display = 'block';
+	imageTag.src = images[currentImage];
 }
 
 function next()
 {
-	document.getElementById(currentImage).style.display = 'none';
-	if (currentImage == 5)
+	if (currentImage == 4)
 	{
-		currentImage = 1;
+		currentImage = 0;
 	}
 	else
 	{
 		currentImage = currentImage + 1;
 	}
-	document.getElementById(currentImage).style.display = 'block';
+	imageTag.src = images[currentImage];
 
 }
