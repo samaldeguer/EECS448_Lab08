@@ -1,1 +1,36 @@
+body {
+	background-color: #edf7ff;
+}
 
+.textStyle {
+	color:  #003a69;
+	font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.center {
+	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
+}
+
+h1 {
+	font-size:  50px;
+}
+
+img, iframe {
+	display:  block;
+}
+
+h4,p,h1 {
+	text-align:  center;
+}
+
+a {
+	font-size:  20px;
+	background-color: orange;
+  	transition: background-color .5s;
+}
+
+a:hover {
+	background-color: yellow;
+}
